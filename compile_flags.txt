@@ -1,0 +1,9 @@
+-I./inc/
+-lglfw
+-lvulkan
+-ldl
+-lpthread
+-lX11
+-lXrandr
+-Wall
+-Wextra

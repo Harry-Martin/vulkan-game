@@ -1,0 +1,15 @@
+#!/bin/bash
+
+EXECUTABLE=game
+
+
+FLAGS=$(cat compile_flags.txt)
+
+C_FILES=$(find $SRC_DIR -name *.c)
+
+if gcc $FLAGS $C_FILES -o $EXECUTABLE $FLAGS
+then
+	./game
+else
+	echo Compilation Failed!
+fi
